@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/output.css" rel="stylesheet">
+    <title>
+        {{ block "title" . }}
+            {{ .Site.Title }}
+        {{ end }}
+    </title>
+</head>
+<body class="bg-main_black">
+    <nav class="p-6 bg-darker flex items-center justify-between">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-xl tracking-tight">Ayush Srinivas</span>
+      </div>
+
+      <div class="flex items-center">
+        <a class="text-white mx-4" href="#">Projects</a>
+        <a class="text-white" href="#">Labs</a>
+      </div>
+    </nav>
+
+    {{ block "main" . }}
+
+    {{ end }}
+</body>
+</html>
