@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +10,16 @@
         {{ end }}
     </title>
 </head>
-<body class="bg-main_black">
+<body class="dark:bg-main_black">
     <nav class="p-6 bg-darker flex items-center justify-between">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <span class="font-semibold text-xl tracking-tight">Ayush Srinivas</span>
+        <span class="font-semibold text-xl tracking-tight">
+          <a href="/">Ayush Srinivas</a>
+        </span>
       </div>
 
       <div class="flex items-center">
-        <a class="text-white mx-4" href="#">Projects</a>
+        <a class="text-white mx-4" href="/projects">Projects</a>
         <a class="text-white" href="#">Labs</a>
       </div>
     </nav>
