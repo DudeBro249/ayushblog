@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div class="flex w-full justify-between">
+    <article class="mr-52 ml-96 mt-11 mb-11">
+        <section class="prose dark:prose-invert max-w-full project-content">
+            {{ .Content }}
+        </section>
+    </article>
+    <aside class="text-white sticky top-0 tableOfContents mt-11 mr-11">
+        {{ .TableOfContents }}
+    </aside>
+</div>
+
+{{ end }}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import './syntax.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.project-content a {
+    @apply text-blue-500;
+}
+
+.tableOfContents {
+    @apply hidden md:block sticky w-96 top-8 ml-4 mb-auto px-3 pb-2 pt-0;
+  }
+.tableOfContents nav ul li ul {
+    @apply ml-1;
+}
+.tableOfContents nav ul li ul a {
+    @apply text-white text-sm font-normal hover:text-orange-400 duration-300;
+}
+.tableOfContents nav ul li a {
+    @apply text-white hover:text-orange-400 duration-300;
+}
