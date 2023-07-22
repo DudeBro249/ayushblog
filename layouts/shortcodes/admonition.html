@@ -1,0 +1,13 @@
+<main>
+    {{ if (eq (lower (.Get "type")) "info") }}
+
+        <div class="bg-admonition_info text-black font rounded-lg">
+            <div class="not-prose ml-4 mt-4 mr-4 mb-0">
+                <p class="font-bold">{{ .Get "type" | upper }}:</p>
+            </div>
+
+          <p class="prose ml-4 mt-0 text-black max-w-full">{{ .Inner | markdownify }}</p>
+        </div>
+        
+    {{ end }}
+</main>
