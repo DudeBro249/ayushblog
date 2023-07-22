@@ -13,10 +13,10 @@
     @apply hidden md:block sticky w-96 top-8 ml-4 mb-auto px-3 pb-2 pt-0;
   }
 .tableOfContents nav ul li ul {
-    @apply ml-1;
+    @apply ml-3;
 }
 .tableOfContents nav ul li ul a {
-    @apply text-white text-sm font-normal hover:text-orange-400 duration-300;
+    @apply text-gray-400 text-sm font-normal hover:text-orange-400 duration-300;
 }
 .tableOfContents nav ul li a {
     @apply text-white hover:text-orange-400 duration-300;
