@@ -1,13 +1,18 @@
-<main>
+<!--TODO: Reorganize elements-->
+
+<div>
     {{ if (eq (lower (.Get "type")) "info") }}
 
         <div class="bg-admonition_info text-black font rounded-lg">
-            <div class="not-prose ml-4 mt-4 mr-4 mb-0">
-                <p class="font-bold">{{ .Get "type" | upper }}:</p>
-            </div>
-
-          <p class="prose ml-4 mt-0 text-black max-w-full">{{ .Inner | markdownify }}</p>
+            <main class="container mx-auto py-3 px-4">
+                <div class="not-prose">
+                    <p class="font-bold">{{ .Get "title" | upper }}:</p>
+                </div>
+                
+                <div class="prose mt-0 text-black max-w-full">
+                    {{ .Inner | markdownify }}
+                </div>
+            </main>
         </div>
-        
     {{ end }}
-</main>
+</div>
