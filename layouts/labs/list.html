@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<div class="grid grid-cols-4 text-white content-between gap-4">
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "labs") 20}}
+
+    {{ range $paginator.Pages }}
+        <div class="bg-darker shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 hover:scale-105">
+            <a href="{{ .Permalink }}">
+                <img class="rounded-t-lg" src="" alt="">
+            </a>
+
+            <div class="p-5">
+                <a href="{{ .Permalink }}">
+                    <h5 class="text-white font-bold text-2xl tracking-tight mb-2">{{ .Title }}</h5>
+                </a>
+                <p class="font-normal text-white mb-3">{{ .Description }}</p>
+                <a href="{{ .Permalink }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
+                    Read more
+                </a>
+            </div>
+        </div>
+    
+    {{ end }}
+</div>
+
+{{ end }}
