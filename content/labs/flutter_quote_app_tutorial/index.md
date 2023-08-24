@@ -1,7 +1,8 @@
 ---
-title: "Learning the Basics of Flutter with a Quote Generator"
+title: "Learning the Basics of Flutter by Building a Quote Generator Application"
 date: 2023-07-16T15:59:40-07:00
 draft: false
+description: This tutorial goes through the core Flutter skills necessary to start building out real-world applications that are able to interface with data from the Internet.
 ---
 
 # Flutter Quote App Tutorial
