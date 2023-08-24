@@ -2,6 +2,7 @@
 title: "Create Massive Amounts of Fake Data Using GraphQL Schemas"
 date: 2023-08-24T01:02:59.279Z
 draft: false
+description: Learn how to use gqlfake - A CLI tool that can be used to create structured, synthetic data using GraphQL schemas to specify fields and data types.
 ---
 
 # Create Massive Amounts of Fake Data Using GraphQL Schemas
