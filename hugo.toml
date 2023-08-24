@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://ayushlikestodev.web.app/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Ayush Likes To Dev'
 
 [markup]
   [markup.highlight]
