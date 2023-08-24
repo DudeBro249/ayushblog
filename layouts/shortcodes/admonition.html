@@ -1,18 +1,23 @@
-<!--TODO: Reorganize elements-->
-
 <div>
-    {{ if (eq (lower (.Get "type")) "info") }}
+    {{ $admonition_bg_color := "" }}
 
-        <div class="bg-admonition_info text-black font rounded-lg">
-            <main class="container mx-auto py-3 px-4">
-                <div class="not-prose">
-                    <p class="font-bold">{{ .Get "title" | upper }}:</p>
-                </div>
-                
-                <div class="prose mt-0 text-black max-w-full">
-                    {{ .Inner | markdownify }}
-                </div>
-            </main>
-        </div>
+    {{ if (eq (lower (.Get "type")) "info") }}
+        {{ $admonition_bg_color = "bg-admonition_info" }}
+    {{ else if (eq (lower (.Get "type")) "caution") }}
+        {{ $admonition_bg_color = "bg-admonition_caution" }}
     {{ end }}
+
+
+    <div class="{{ $admonition_bg_color }} text-black font rounded-lg">
+        <main class="container mx-auto py-3 px-4">
+            <div class="not-prose">
+                <p class="font-bold">{{ .Get "title" | upper }}:</p>
+            </div>
+            
+            <div class="prose mt-0 text-black max-w-full">
+                {{ .Inner | markdownify }}
+            </div>
+        </main>
+    </div>
+
 </div>
