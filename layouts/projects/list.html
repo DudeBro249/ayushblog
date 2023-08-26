@@ -4,7 +4,7 @@
     {{ $paginator := .Paginate (where .Data.Pages "Type" "projects") 20}}
 
     {{ range $paginator.Pages }}
-        <div class="bg-darker shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 hover:scale-105">
+        <div class="bg-darker_black shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 hover:scale-105">
             <a href="{{ .Permalink }}">
                 <img class="rounded-t-lg" src="" alt="">
             </a>
